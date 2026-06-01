@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Добавить сотрудника</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>ФИО</label><input type="text" name="full_name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Должность</label><input type="text" name="position" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Отдел</label><input type="text" name="department" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Телефон</label><input type="text" name="phone" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Email</label><input type="email" name="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Дата приёма (ГГГГ-ММ-ДД)</label><input type="date" name="hire_date" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success">Сохранить</button>
+    <a href="/" class="btn btn-secondary">Отмена</a>
+</form>
+{% endblock %}
